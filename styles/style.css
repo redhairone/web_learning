@@ -1,11 +1,13 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+* {
+  /* Puts smth on all the elements */
+  /* Selector with the lowest priority */
+}
+
+body {
   color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid blue;
 }
 
 h1,
@@ -113,4 +115,22 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+/* Resolving conflicts */
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
 }
