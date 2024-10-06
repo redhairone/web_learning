@@ -1,11 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
+}
+
+.product {
+  width: 825px;
+  margin: 50px auto;
 
   border: 5px solid black;
 }
 
-.page_header {
+.product-title {
+  padding: 15px;
+
   background-color: #f7f7f7;
 
   font-size: 22px;
@@ -14,53 +26,74 @@ body {
   text-transform: uppercase;
 }
 
-.product_details_header {
-  text-transform: uppercase;
+.cost {
+  font-size: 30px;
 }
 
 .shipping_cost {
+  margin-bottom: 20px;
+
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
   color: gray;
 }
 
-.cost {
-  font-size: 30px;
+.more-information {
+  margin-bottom: 40px;
 }
 
-ul {
-  list-style: square;
-}
-
-.more_information_link:link,
-.more_information_link:visited {
+.more-information-link:link,
+.more-information-link:visited {
   color: black;
 }
 
-.more_information_link:hover,
-.more_information_link:active {
+.more-information-link:hover,
+.more-information-link:active {
   text-decoration: none;
 }
 
-.add_to_cart_button {
+.product_details_header {
+  margin-bottom: 15px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 5px solid black;
+
   text-transform: uppercase;
   font-size: 25px;
 
   color: white;
   background-color: black;
 
-  border: none;
-
   cursor: pointer;
 }
 
-.add_to_cart_button:hover {
+.add-to-cart-button:hover {
   color: black;
   background-color: white;
 }
 
-.add_to_cart_button:active {
+.add-to-cart-button:active {
   color: white;
   background-color: gray;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin-bottom: 10px;
+  margin-left: 20px;
 }

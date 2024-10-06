@@ -1,13 +1,56 @@
 * {
   /* Puts smth on all the elements */
   /* Selector with the lowest priority */
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: #444;
   font-family: sans-serif;
 
-  border-top: 10px solid blue;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-header {
+  height: 80px;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+
+  text-align: center;
+
+  background-color: #f7f7f7;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+aside {
+  width: 500px;
+  padding: 50px 0;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+
+  background-color: #f7f7f7;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -23,10 +66,14 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 30px;
+
   font-size: 40px;
 }
 
 h3 {
+  margin-bottom: 20px;
+
   font-size: 30px;
 }
 
@@ -37,13 +84,27 @@ h4 {
 }
 
 p {
+  margin-bottom: 15px;
+
   font-size: 22px;
   line-height: 1.5;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
   line-height: 1.35;
+
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin: 0;
 }
 
 .related-posts {
@@ -63,16 +124,6 @@ li {
 
 #copyright {
   font-size: 16px;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 .first-li {
