@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
   color: #444;
   font-family: sans-serif;
@@ -15,10 +16,14 @@ body {
 .container {
   width: 800px;
   margin: 0 auto;
+  padding: 10px;
+
+  background-color: rgb(241, 241, 241);
+
+  position: relative;
 }
 
 .main-header {
-  height: 80px;
   padding: 20px 40px;
   margin-bottom: 60px;
 
@@ -28,7 +33,7 @@ body {
 }
 
 article {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 nav {
@@ -37,6 +42,8 @@ nav {
 
 aside {
   width: 500px;
+
+  margin: 0 auto;
   padding: 50px 0;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
@@ -44,8 +51,15 @@ aside {
   background-color: #f7f7f7;
 }
 
+/* SMALLER ELEMENTS */
 .post-header {
   margin-bottom: 40px;
+}
+
+nav a:link {
+  margin: 5px;
+
+  display: inline-block;
 }
 
 .post-image {
@@ -69,6 +83,8 @@ h2 {
   margin-bottom: 30px;
 
   font-size: 40px;
+
+  position: relative;
 }
 
 h3 {
@@ -184,4 +200,49 @@ a:active {
 
 footer p {
   color: green;
+
+  text-align: center;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  padding: 20px;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: green; */
+}
+
+h2::after {
+  content: "TOP";
+
+  top: -10px;
+  right: -20px;
+
+  padding: 5px 10px;
+
+  color: black;
+  background: #ffe70e;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  display: inline-block;
+  position: absolute;
 }

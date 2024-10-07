@@ -15,6 +15,22 @@ body {
   border: 5px solid black;
 }
 
+.product-title::before {
+  position: absolute;
+  left: -40px;
+  top: -15px;
+
+  padding: 5px 20px;
+
+  content: "SALE";
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  background-color: red;
+}
+
 .product-title {
   padding: 15px;
 
@@ -24,6 +40,8 @@ body {
 
   text-align: center;
   text-transform: uppercase;
+
+  position: relative;
 }
 
 .cost {
@@ -51,6 +69,40 @@ body {
 .more-information-link:hover,
 .more-information-link:active {
   text-decoration: none;
+}
+
+.color-boxes {
+  margin-bottom: 30px;
+}
+
+.color-box {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px;
+}
+
+.black-box {
+  background-color: black;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.yellow-box {
+  background-color: yellow;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.brown-box {
+  background-color: brown;
 }
 
 .product_details_header {
